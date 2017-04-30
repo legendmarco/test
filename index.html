@@ -141,12 +141,12 @@ $(document).ready(function() {
 
 var div;
 function drawHeartOver() {
-	var divHeight = ampx / 1.6;
+	var divHeight = ampx / 1.4;
 	var divWidth = parseInt(divHeight / 0.618);
 	var padding = 15;
 	var divString = '<div style="color: black; background-color: pink; opacity: 0.8; width: '+0+'px; height: '+0+'px; position: absolute; \
 					margin-buttom: 0px; margin-right: 0px; border-radius: 5px; font-size: 20px; padding: '+padding+'px; \
-					margin-left: '+(width / 2 - divWidth / 2)+'px; margin-top: '+(height / 2.6 - divHeight / 2)+'px; "></div>';
+					margin-left: '+(width / 2 - divWidth / 2)+'px; margin-top: '+(height / 2.6 - divHeight / 2.6)+'px; "></div>';
 	div = $(divString);
 	body.append(div);
 	div.animate({width: divWidth - padding * 2, height: divHeight - padding * 2}, 'slow', drawAreaOver);
