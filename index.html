@@ -32,6 +32,7 @@
 </html>
 
 <script src="decorations.js"></script>
+<script src="./js/imageLoad.js"></script>
 <script>
 
 var ampx = 300, ampy = 200, step = 20;
@@ -129,7 +130,7 @@ function preload(imgs) {
 				// main run
 				waitingDiv.remove();
 				console.log('run');
-				body.attr('style', 'background: url("bg.jpg");');
+				body.attr('style', 'background-image: url("bg.jpg"); background-size:cover;');                              
 				insertDecorations();
 				var arr = generateDrawArray();
 				animateAppend(arr);
